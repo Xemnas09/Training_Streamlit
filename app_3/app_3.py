@@ -14,9 +14,6 @@ st.markdown("Avec la librairie ```Mitosheet```, il est possible d'afficher effic
             "pro pour profiter de toutes les fonctionnalités. Ce package ne sera pas utilisé pour nos tableaux de "
             "bord")
 
-st.sidebar.title("INFORMATION")
-st.sidebar.write("Element 1 ")
-
 
 data = pd.read_csv("app_3/Cancer_Data.csv")
 
