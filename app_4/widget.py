@@ -155,22 +155,8 @@ if authentication_status:
     (car il est possible d'avoir plusieurs ```Slider``` ou ```Text input``` sur l'interface. Cela ce fait avec 
     l'argument ```key``` qui prend en valeur une chaîne de caractère. Lorsque cela est fait, la valeur du widget est 
     accesible via la commande ```st.session_state.key``` où ```key``` est la clé du widget. ```st.session_state``` est 
-    un **dictionnaire** receuillant l'ensemble des valeurs des widgets dont on a initialisé la clé. Ici on peut acceder
-     aux valeurs de la session en l'appelant:
+    un **dictionnaire** receuillant l'ensemble des valeurs des widgets dont on a initialisé la clé. 
     """
-    st.divider()
-
-    st.write(st.session_state)
-
-    st.divider()
-    """
-    Comme on peut le voir, elle ne contient pas les valeurs des widgets que l'on a crée car tout ils tous ont été stocké 
-    dans des variables. Maintenant créeons un widget dont on va initialisé la clé. Cette dernière va s'afficher dans la
-    session (le nom de la clé et sa valeur)
-    """
-    st.divider()
-    st.slider(label="valeur", key="slider")
-    st.divider()
 
     """
     L'utilisation de la session est un bon moyen de stocker certains resultat entre plusieurs exécutions de 
