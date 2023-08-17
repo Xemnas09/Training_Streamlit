@@ -1,0 +1,30 @@
+import streamlit as st
+import yaml
+from yaml.loader import SafeLoader
+import streamlit_authenticator as stauth
+
+# --- AUTHENTIFICATION DES UTILISATEURS ---
+
+# Generation des mots de passes des utilisateurs (déja initialisé dans le fichier config.yaml)
+passwords = ["XXXXXX", "XXXXX"]
+hashed_passwords = stauth.Hasher(passwords).generate()
+
+with open("app_4/pages/config.yaml") as file:
+    config = yaml.load(file, Loader=SafeLoader)
+
+authenticator = stauth.Authenticate(
+    credentials=config['credentials'],
+    cookie_name=config['cookie']['name'],
+    key=config['cookie']['key'],
+    preauthorized=config['preauthorized']
+)
+
+name, authentification_statuts, username = authenticator.login("Login", "main")
+
+if not authentification_statuts:
+    st.error("Username/password is incorrect")
+elif authentification_statuts is None:
+    st.warning("Please enter your username and password")
+else:
+    authenticator.logout("Logout", "main")
+    st.success("Login succesful")

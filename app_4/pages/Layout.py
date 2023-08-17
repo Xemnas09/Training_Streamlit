@@ -2,7 +2,6 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-st.set_page_config(page_title="Layout Streamlit", layout="wide")
 st.title("Layout avec Streamlit")
 
 """
@@ -77,3 +76,5 @@ with st.container():
 En modifiant les dimensions de la page, les 2 graphiques vont ajuster leurs dimensions et leurs positions 
 automatiquement.
 """
+
+st.file_uploader("choose a file", key="data")
