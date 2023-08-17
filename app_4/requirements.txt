@@ -1,4 +1,5 @@
 streamlit
+yaml
 yaml.loader
 pandas
 plotly
