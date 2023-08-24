@@ -77,5 +77,3 @@ with st.container():
 En modifiant les dimensions de la page, les 2 graphiques vont ajuster leurs dimensions et leurs positions 
 automatiquement.
 """
-
-st.file_uploader("choose a file", key="data")
