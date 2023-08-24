@@ -5,7 +5,7 @@ credentials:
       name: Kouassi Paul Emmanuel
       password: $2b$12$2Ik20aDUaZqnX36oM1EoEO58hNO2qSMrmv1nMWfokq4eu9oGBs6jm
 cookie:
-  expiry_days: 30
+  expiry_days: 0
   key: mykey
   name: cookie
 preauthorized:
