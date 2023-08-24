@@ -85,7 +85,7 @@ if authentication_status:
     st.code(f"La valeur de x est {x} \n" f"le carré de x est {x**2}")
 
     """
-    # Text input (zone de saisie de texte)
+    # Text_input (zone de saisie de texte)
     """
 
     st.divider()
