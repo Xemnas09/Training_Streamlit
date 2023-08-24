@@ -108,7 +108,7 @@ if authentication_status:
     st.divider()
     """
     Ce widget permet entre autre d'afficher ou de masquer une section de son application. Par exemple, on peut decider
-    d'afficher ou non une base de données:
+    d'afficher ou non la base de données:
     """
     st.divider()
 
