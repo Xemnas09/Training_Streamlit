@@ -3,6 +3,7 @@ import plotly.express as px
 import pandas as pd
 
 st.title("Layout avec Streamlit")
+authenticator.logout("logout", "sidebar")
 
 """
 Streamlit permet de gérer la disposition des widgets de manière très simple avec la fonction ```st.columns```. Il permet
