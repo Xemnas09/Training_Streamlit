@@ -35,8 +35,8 @@ with col2:
     """
 
 """
-C'est un bon moyens de concevoir des tableaux de bord en disposant plusieurs graphiques sur une même ligne. Cependant,
-si l'on dispose des graphiques ainsi et  que l'on modifie la taille de la page, les graphuques ne vont pas s'adapter à 
+C'est un bon moyen de concevoir des tableaux de bord en disposant plusieurs graphiques sur une même ligne. Cependant,
+si l'on dispose des graphiques ainsi et que l'on modifie la taille de la page, les graphiques ne vont pas s'adapter à 
 cette dernière. Si nous souhaitons avoir des éléments qui adapte automatiquement sa largeur à la page, il faut inclure 
 ces éléments dans un **conteneur**. Cela peut se faire avec la commande ```st.container```. Il faut également inclure 
 dans la fonction de sortie l'argument ```use_container_width```. Imaginons que l'on souhaite afficher 2 graphiques sur 
