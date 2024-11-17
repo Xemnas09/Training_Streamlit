@@ -42,9 +42,10 @@ authenticator = stauth.Authenticate(
     preauthorized=config["preauthorized"],
 )
 
+st.write(authenticator)
 
 # --- PAGE DE CONNEXION ---
-authentication_status, name = authenticator.login(single_session=True)
+name, authentication_status, username = authenticator.login()
 
 
 if authentication_status:
