@@ -44,7 +44,7 @@ authenticator = stauth.Authenticate(
 
 
 # --- PAGE DE CONNEXION ---
-name = authenticator.login(single_session=True)
+authentication_status, name = authenticator.login(single_session=True)
 
 
 if authentication_status:
