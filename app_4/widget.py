@@ -44,7 +44,7 @@ authenticator = stauth.Authenticate(
 
 
 # --- PAGE DE CONNEXION ---
-name, authentication_status, username = authenticator.login(captcha=True)
+name = authenticator.login(single_session=True)
 
 
 if authentication_status:
