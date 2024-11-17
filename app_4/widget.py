@@ -32,7 +32,7 @@ section[data-testid="stSidebar"][aria-expanded="true"] {
 # l'authentification de l'utilisateur
 
 # Lecture du fichier "config.yaml' pour récuperer la liste des utilisateurs et leurs informations
-with open("app_4/pages/config.yaml") as file:
+with open("pages/config.yaml") as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 authenticator = stauth.Authenticate(
