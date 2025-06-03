@@ -1,0 +1,5 @@
+streamlit
+streamlit-oauth
+python-dotenv
+pandas
+altair
